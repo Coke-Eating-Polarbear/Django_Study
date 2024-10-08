@@ -8,3 +8,6 @@ def service_details(request):
 
 def portfolio_details(request):
     return render(request, 'portfolio-details.html')
+
+def traffic(request):
+    return render(request, 'traffic_recognize.html')

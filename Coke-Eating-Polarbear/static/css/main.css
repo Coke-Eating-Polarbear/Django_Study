@@ -827,6 +827,9 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  max-width: 400px;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1046,106 +1049,96 @@ section,
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 40px; /* 여백 조정 */
+  height: auto;
 }
 
 @media (max-width: 575px) {
   .contact .info-wrap {
-    padding: 20px;
+    padding: 30px; /* 모바일에서의 여백 조정 */
   }
 }
 
 .contact .info-item {
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* 각 정보 항목 사이의 간격 조정 */
 }
 
 .contact .info-item i {
-  font-size: 20px;
+  font-size: 20px; /* 아이콘 크기 조정 */
   color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
+  width: 44px; /* 아이콘의 너비 조정 */
+  height: 44px; /* 아이콘의 높이 조정 */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+  border-radius: 50px; /* 아이콘 배경의 둥근 모서리 정도 */
+  transition: all 0.3s ease-in-out; /* 애니메이션 속도 조정 */
+  margin-right: 15px; /* 아이콘과 텍스트 간의 간격 */
 }
 
 .contact .info-item h3 {
   padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
+  font-size: 18px; /* 제목 크기 조정 */
+  font-weight: 700; /* 제목 두께 조정 */
+  margin-bottom: 5px; /* 제목과 본문 간의 간격 조정 */
 }
 
 .contact .info-item p {
   padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
+  margin-bottom: 0; /* 본문 간격 조정 */
+  font-size: 14px; /* 본문 크기 조정 */
 }
 
 .contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--accent-color); /* 마우스 오버 시 아이콘 배경 색상 조정 */
+  color: var(--contrast-color); /* 마우스 오버 시 아이콘 텍스트 색상 조정 */
 }
 
+/* 연락처 폼에 대한 스타일 (사용하지 않지만 나중에 필요할 수 있음) */
+/*
 .contact .php-email-form {
   background-color: var(--surface-color);
   height: 100%;
-  padding: 30px;
+  padding: 30px; /* 여백 조정 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 @media (max-width: 575px) {
   .contact .php-email-form {
-    padding: 20px;
+    padding: 20px; /* 모바일에서의 여백 조정 */
   }
 }
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
+  font-size: 14px; /* 입력 폼 크기 조정 */
+  padding: 10px 15px; /* 입력 폼 내 여백 조정 */
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 0; /* 입력 폼의 모서리 둥글기 조정 */
   color: var(--default-color);
   background-color: var(--surface-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--accent-color); /* 버튼 배경 색상 조정 */
   border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
+  padding: 10px 30px; /* 버튼 내 여백 조정 */
+  transition: 0.4s; /* 버튼 애니메이션 속도 조정 */
+  border-radius: 50px; /* 버튼 모서리 둥글기 조정 */
 }
+*/
 
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 200%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1154,7 +1147,7 @@ section,
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
+  width: 15px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
